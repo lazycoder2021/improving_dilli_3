@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>template-3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Patrick+Hand&family=Roboto&display=swap" rel="stylesheet">
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <div class="nav">
+                <div class="left">
+                    <img src="image/maxresdefault.jpg">
+                </div>
+                <div class="right">
+                    <a href="#" class="alink">menu</a>
+                </div>    
+            </div>  
+            <div class="menubox hide">
+                <div class="menu-items">
+                    <ul>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Servicesa</li>
+                        <li><a href="#">contact</a></li>    
+                    </ul>    
+                </div>    
+            </div>  
+        </div>    
+    </div>
+    <script>
+        document.querySelector('.alink').addEventListener('click', function () {
+            document.querySelector('.menubox').classList.toggle('hide');
+        })
+    </script>
+</body>
+</html>
